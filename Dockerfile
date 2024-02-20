@@ -5,7 +5,6 @@ COPY package.json package-lock.json ./
 COPY . .
 RUN npm install
 # Build the Angular app
-RUN npm run build
 # Use nginx image as base for serving Angular application
 FROM nginx:latest
 
