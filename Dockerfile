@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:20
 RUN echo " Try to build my application"
 WORKDIR /app
 COPY package.json package-lock.json ./
